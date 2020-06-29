@@ -13,12 +13,9 @@
     .navigation{
         display:flex; 
         margin-right:auto;
-        li{
-           list-style-type: none; 
-               a{
-                border-right:1px solid black;
-                padding: 0 5px;
-               }
+        list-style-type: none;
+        a{
+        border-right:1px solid black;
         }
     }
     .login{
