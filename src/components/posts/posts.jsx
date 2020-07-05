@@ -26,7 +26,7 @@ return(
             <tr>
             <td>{post.num_comments | 0}</td>
             <td className={post.points > 100 ? 'orange': post.points > 50 ? 'indianred' : null}>{post.points || 0}</td>
-            <td></td>
+            <td><div class="votearrow" title="upvote" onClick={()=> props.updateUpvoteCount(post.objectID)}></div></td>
             <td>
             <a href={post.url}>{post.title || 'No Title Available'}</a>
             <span className='smallText'> <a href={post.url} className='domain'>({getDomainName(post.url)})</a> by <a>{post.author}</a> </span>
